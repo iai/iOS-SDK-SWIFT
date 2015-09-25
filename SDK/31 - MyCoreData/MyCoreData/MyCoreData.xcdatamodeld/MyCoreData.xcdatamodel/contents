@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Email" representedClassName="MyCoreData.Email" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="emails" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Telefone" representedClassName="MyCoreData.Telefone" syncable="YES">
+        <attribute name="telefone" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="telefones" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="MyCoreData.User" syncable="YES">
+        <attribute name="senha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usuario" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="emails" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Email" inverseName="user" inverseEntity="Email" syncable="YES"/>
+        <relationship name="telefones" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Telefone" inverseName="user" inverseEntity="Telefone" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Email" positionX="-56" positionY="27" width="128" height="73"/>
+        <element name="Telefone" positionX="-56" positionY="114" width="128" height="73"/>
+        <element name="User" positionX="-288" positionY="12" width="128" height="103"/>
+    </elements>
+</model>

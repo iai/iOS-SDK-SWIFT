@@ -1,0 +1,13 @@
+ComandosExportCertificados
+
+Depois de exportar a chave pública (CERT.p12) e a chave privada (KEY.pem) do KeyChain, execute o seguinte:
+
+1) ABRIR TERMINAL
+2) IR PARA DESKTOP
+3) openssl pkcs12 -clcerts -nokeys -out CERT.pem -in CERT.p12
+4) openssl pkcs12 -nocerts -out KEY.pem -in KEY.p12
+5) openssl rsa -in KEY.pem -out KEYNOENC.pem
+6) cat CERT.pem KEYNOENC.pem > apns.pem
+
+Colocar o “apns.pem” no teu servidor.
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>es</key>
+	<dict>
+		<key>welcome</key>
+		<string>Bienvenido</string>
+		<key>goodbye</key>
+		<string>Ciao</string>
+		<key>love</key>
+		<string>Amor</string>
+	</dict>
+	<key>pt</key>
+	<dict>
+		<key>welcome</key>
+		<string>Bem vindo</string>
+		<key>goodbye</key>
+		<string>Tchau</string>
+		<key>love</key>
+		<string>Amor</string>
+	</dict>
+	<key>en</key>
+	<dict>
+		<key>welcome</key>
+		<string>Welcome</string>
+		<key>goodbye</key>
+		<string>Goodbye</string>
+		<key>love</key>
+		<string>Love</string>
+	</dict>
+</dict>
+</plist>

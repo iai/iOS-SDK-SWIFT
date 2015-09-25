@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="D4o-iO-OLQ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapaGPS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fng-HO-L1H">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3f6-Lq-LlE"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Novo Pin" id="BrW-oh-EeQ">
+                                        <connections>
+                                            <action selector="addPin" destination="BYZ-38-t0r" id="R7d-yx-3Wh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="th5-dT-qyp"/>
+                                    <barButtonItem style="plain" id="8hr-RB-ouq">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Qyg-dz-QYa">
+                                            <rect key="frame" x="200" y="7" width="150" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Mapa"/>
+                                                <segment title="Híbrido"/>
+                                                <segment title="Satélite"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="changeMapType" destination="BYZ-38-t0r" eventType="valueChanged" id="pnM-aY-5Tr"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="LtX-W7-Pz1"/>
+                                    <barButtonItem title="Onde estou?" id="0aQ-1O-JA2">
+                                        <connections>
+                                            <action selector="findMe" destination="BYZ-38-t0r" id="5jH-qE-lZc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Wxv-fJ-WlG">
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mcx-Zk-XWu"/>
+                                </connections>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgX-Ye-Num">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="yGE-bJ-WZP"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="o2M-zP-jFG"/>
+                                    <barButtonItem title="Linha" id="TrI-zW-RYQ">
+                                        <connections>
+                                            <action selector="desenharLinha:" destination="BYZ-38-t0r" id="b9a-Yu-CU1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Tlr-1Z-EDy"/>
+                                    <barButtonItem title="Polígono" id="38l-x7-ZYx">
+                                        <connections>
+                                            <action selector="desenharPoligono:" destination="BYZ-38-t0r" id="a3T-d1-kRt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pAN-Df-x0p"/>
+                                    <barButtonItem title="Círculo" id="B0q-cH-y2e">
+                                        <connections>
+                                            <action selector="desenharCirculo:" destination="BYZ-38-t0r" id="2k6-Zf-VrY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="STO-al-1OL"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fng-HO-L1H" secondAttribute="trailing" id="6qv-X4-ojX"/>
+                            <constraint firstItem="PgX-Ye-Num" firstAttribute="top" secondItem="Wxv-fJ-WlG" secondAttribute="bottom" id="7GW-wS-pQp"/>
+                            <constraint firstAttribute="trailing" secondItem="Wxv-fJ-WlG" secondAttribute="trailing" id="Bdf-SC-ZwU"/>
+                            <constraint firstItem="fng-HO-L1H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HhZ-fZ-UCL"/>
+                            <constraint firstItem="Wxv-fJ-WlG" firstAttribute="top" secondItem="fng-HO-L1H" secondAttribute="bottom" id="Hle-Nz-xeH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PgX-Ye-Num" secondAttribute="bottom" id="Ji0-zD-74r"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wxv-fJ-WlG" secondAttribute="bottom" constant="50" id="PTQ-DX-9cY"/>
+                            <constraint firstItem="fng-HO-L1H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gTU-Q2-8Ya"/>
+                            <constraint firstItem="PgX-Ye-Num" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iAW-AF-XR6"/>
+                            <constraint firstItem="Wxv-fJ-WlG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rJj-cP-enM"/>
+                            <constraint firstAttribute="trailing" secondItem="PgX-Ye-Num" secondAttribute="trailing" id="wnU-rx-6QS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PTQ-DX-9cY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rj3-qu-TeL"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="map" destination="Wxv-fJ-WlG" id="zOE-Dg-Fn8"/>
+                        <outlet property="mapType" destination="Qyg-dz-QYa" id="kzc-vp-Cnt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w7L-JQ-A18">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="D4o-iO-OLQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gox-pn-EXq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yB1-fo-Dh3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOF-Ox-XDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="217" y="428"/>
+        </scene>
+    </scenes>
+</document>

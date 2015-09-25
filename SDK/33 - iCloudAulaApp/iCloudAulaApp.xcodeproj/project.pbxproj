@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A77534E1B965F9B00F94DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A77534D1B965F9B00F94DED /* AppDelegate.swift */; };
+		9A7753501B965F9B00F94DED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A77534F1B965F9B00F94DED /* ViewController.swift */; };
+		9A7753531B965F9B00F94DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7753511B965F9B00F94DED /* Main.storyboard */; };
+		9A7753551B965F9B00F94DED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A7753541B965F9B00F94DED /* Images.xcassets */; };
+		9A7753581B965F9B00F94DED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7753561B965F9B00F94DED /* LaunchScreen.xib */; };
+		9A7753641B965F9C00F94DED /* iCloudAulaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7753631B965F9C00F94DED /* iCloudAulaAppTests.swift */; };
+		9A77536F1B96601900F94DED /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A77536E1B96601900F94DED /* CloudKit.framework */; };
+		9A7753711B9660E900F94DED /* logoiai.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A7753701B9660E900F94DED /* logoiai.png */; };
+		9A7753731B96707200F94DED /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7753721B96707200F94DED /* NoteViewController.swift */; };
+		9A7753751B96711500F94DED /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7753741B96711500F94DED /* CloudKitHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A77535E1B965F9C00F94DED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A7753401B965F9B00F94DED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A7753471B965F9B00F94DED;
+			remoteInfo = iCloudAulaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A7753481B965F9B00F94DED /* iCloudAulaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCloudAulaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A77534C1B965F9B00F94DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A77534D1B965F9B00F94DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A77534F1B965F9B00F94DED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A7753521B965F9B00F94DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A7753541B965F9B00F94DED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9A7753571B965F9B00F94DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9A77535D1B965F9C00F94DED /* iCloudAulaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCloudAulaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A7753621B965F9C00F94DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A7753631B965F9C00F94DED /* iCloudAulaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudAulaAppTests.swift; sourceTree = "<group>"; };
+		9A77536D1B965FF400F94DED /* iCloudAulaApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iCloudAulaApp.entitlements; sourceTree = "<group>"; };
+		9A77536E1B96601900F94DED /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		9A7753701B9660E900F94DED /* logoiai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoiai.png; sourceTree = "<group>"; };
+		9A7753721B96707200F94DED /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		9A7753741B96711500F94DED /* CloudKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A7753451B965F9B00F94DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A77536F1B96601900F94DED /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A77535A1B965F9C00F94DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A77533F1B965F9B00F94DED = {
+			isa = PBXGroup;
+			children = (
+				9A77534A1B965F9B00F94DED /* iCloudAulaApp */,
+				9A7753601B965F9C00F94DED /* iCloudAulaAppTests */,
+				9A7753491B965F9B00F94DED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A7753491B965F9B00F94DED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A7753481B965F9B00F94DED /* iCloudAulaApp.app */,
+				9A77535D1B965F9C00F94DED /* iCloudAulaAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A77534A1B965F9B00F94DED /* iCloudAulaApp */ = {
+			isa = PBXGroup;
+			children = (
+				9A77536D1B965FF400F94DED /* iCloudAulaApp.entitlements */,
+				9A77534D1B965F9B00F94DED /* AppDelegate.swift */,
+				9A7753701B9660E900F94DED /* logoiai.png */,
+				9A77534F1B965F9B00F94DED /* ViewController.swift */,
+				9A7753721B96707200F94DED /* NoteViewController.swift */,
+				9A7753741B96711500F94DED /* CloudKitHelper.swift */,
+				9A7753511B965F9B00F94DED /* Main.storyboard */,
+				9A7753541B965F9B00F94DED /* Images.xcassets */,
+				9A7753561B965F9B00F94DED /* LaunchScreen.xib */,
+				9A77534B1B965F9B00F94DED /* Supporting Files */,
+			);
+			path = iCloudAulaApp;
+			sourceTree = "<group>";
+		};
+		9A77534B1B965F9B00F94DED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A77536E1B96601900F94DED /* CloudKit.framework */,
+				9A77534C1B965F9B00F94DED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A7753601B965F9C00F94DED /* iCloudAulaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A7753631B965F9C00F94DED /* iCloudAulaAppTests.swift */,
+				9A7753611B965F9C00F94DED /* Supporting Files */,
+			);
+			path = iCloudAulaAppTests;
+			sourceTree = "<group>";
+		};
+		9A7753611B965F9C00F94DED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A7753621B965F9C00F94DED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A7753471B965F9B00F94DED /* iCloudAulaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A7753671B965F9C00F94DED /* Build configuration list for PBXNativeTarget "iCloudAulaApp" */;
+			buildPhases = (
+				9A7753441B965F9B00F94DED /* Sources */,
+				9A7753451B965F9B00F94DED /* Frameworks */,
+				9A7753461B965F9B00F94DED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCloudAulaApp;
+			productName = iCloudAulaApp;
+			productReference = 9A7753481B965F9B00F94DED /* iCloudAulaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A77535C1B965F9C00F94DED /* iCloudAulaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A77536A1B965F9C00F94DED /* Build configuration list for PBXNativeTarget "iCloudAulaAppTests" */;
+			buildPhases = (
+				9A7753591B965F9C00F94DED /* Sources */,
+				9A77535A1B965F9C00F94DED /* Frameworks */,
+				9A77535B1B965F9C00F94DED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A77535F1B965F9C00F94DED /* PBXTargetDependency */,
+			);
+			name = iCloudAulaAppTests;
+			productName = iCloudAulaAppTests;
+			productReference = 9A77535D1B965F9C00F94DED /* iCloudAulaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A7753401B965F9B00F94DED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = iai;
+				TargetAttributes = {
+					9A7753471B965F9B00F94DED = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 7PZ52KHSNP;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					9A77535C1B965F9C00F94DED = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 9A7753471B965F9B00F94DED;
+					};
+				};
+			};
+			buildConfigurationList = 9A7753431B965F9B00F94DED /* Build configuration list for PBXProject "iCloudAulaApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A77533F1B965F9B00F94DED;
+			productRefGroup = 9A7753491B965F9B00F94DED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A7753471B965F9B00F94DED /* iCloudAulaApp */,
+				9A77535C1B965F9C00F94DED /* iCloudAulaAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A7753461B965F9B00F94DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A7753531B965F9B00F94DED /* Main.storyboard in Resources */,
+				9A7753581B965F9B00F94DED /* LaunchScreen.xib in Resources */,
+				9A7753711B9660E900F94DED /* logoiai.png in Resources */,
+				9A7753551B965F9B00F94DED /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A77535B1B965F9C00F94DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A7753441B965F9B00F94DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A7753501B965F9B00F94DED /* ViewController.swift in Sources */,
+				9A7753731B96707200F94DED /* NoteViewController.swift in Sources */,
+				9A7753751B96711500F94DED /* CloudKitHelper.swift in Sources */,
+				9A77534E1B965F9B00F94DED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A7753591B965F9C00F94DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A7753641B965F9C00F94DED /* iCloudAulaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A77535F1B965F9C00F94DED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A7753471B965F9B00F94DED /* iCloudAulaApp */;
+			targetProxy = 9A77535E1B965F9C00F94DED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A7753511B965F9B00F94DED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A7753521B965F9B00F94DED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A7753561B965F9B00F94DED /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A7753571B965F9B00F94DED /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A7753651B965F9C00F94DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A7753661B965F9C00F94DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A7753681B965F9C00F94DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iCloudAulaApp/iCloudAulaApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lucas Longo (V69W5C5KJ4)";
+				INFOPLIST_FILE = iCloudAulaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9A7753691B965F9C00F94DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iCloudAulaApp/iCloudAulaApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lucas Longo (V69W5C5KJ4)";
+				INFOPLIST_FILE = iCloudAulaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9A77536B1B965F9C00F94DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iCloudAulaAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCloudAulaApp.app/iCloudAulaApp";
+			};
+			name = Debug;
+		};
+		9A77536C1B965F9C00F94DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iCloudAulaAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCloudAulaApp.app/iCloudAulaApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A7753431B965F9B00F94DED /* Build configuration list for PBXProject "iCloudAulaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A7753651B965F9C00F94DED /* Debug */,
+				9A7753661B965F9C00F94DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A7753671B965F9C00F94DED /* Build configuration list for PBXNativeTarget "iCloudAulaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A7753681B965F9C00F94DED /* Debug */,
+				9A7753691B965F9C00F94DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9A77536A1B965F9C00F94DED /* Build configuration list for PBXNativeTarget "iCloudAulaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A77536B1B965F9C00F94DED /* Debug */,
+				9A77536C1B965F9C00F94DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A7753401B965F9B00F94DED /* Project object */;
+}
